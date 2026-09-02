@@ -17,8 +17,8 @@ df.tail()
 df.describe()
 
 from sklearn import preprocessing
-string_to_int= preprocessing.LabelEncoder()                     #encode your data
-df=df.apply(string_to_int.fit_transform) #fit and transform it
+string_to_int= preprocessing.LabelEncoder()                    
+df=df.apply(string_to_int.fit_transform) 
 df
 
 feature_cols = ['Outlook','Temprature','Humidity','Wind']
